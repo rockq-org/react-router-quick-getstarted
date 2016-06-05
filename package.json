@@ -10,9 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "isomorphic-fetch": "^2.2.1",
     "less-loader": "^2.2.3",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
+    "react-redux": "^4.2.1",
+    "redux": "^3.2.1",
     "superagent": "^2.0.0"
   },
   "devDependencies": {
@@ -26,6 +29,9 @@
     "less": "^2.7.1",
     "react-loader": "^2.4.0",
     "react-router": "^2.4.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "redux-logger": "^2.6.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",

@@ -8,4 +8,4 @@ var server = new WebpackDevServer(compiler, {
   publicPath: configs.output.publicPath
 });
 
-server.listen(3000);
+server.listen(4000);

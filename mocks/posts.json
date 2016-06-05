@@ -1,0 +1,33 @@
+{
+  "code": 200,
+  "result": [
+    {
+      "author": "artisan",
+      "title": "post 1",
+      "date": "2016-06-05 12:32:32",
+      "description": "post 1 description",
+      "body": "hello world..."
+    },
+    {
+      "author": "artisan",
+      "title": "post 2",
+      "date": "2016-06-05 12:32:32",
+      "description": "post 2 description",
+      "body": "post 2 body."
+    },
+    {
+      "author": "artisan",
+      "title": "post 3",
+      "date": "2016-06-05 12:32:32",
+      "description": "post 3 description",
+      "body": "post 3 body."
+    },
+    {
+      "author": "artisan",
+      "title": "post 4",
+      "date": "2016-06-05 12:32:32",
+      "description": "post 4 description",
+      "body": "post 4 body."
+    }
+  ]
+}
