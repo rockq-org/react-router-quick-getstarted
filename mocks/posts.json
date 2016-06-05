@@ -2,6 +2,7 @@
   "code": 200,
   "result": [
     {
+      "id": 1,
       "author": "artisan",
       "title": "post 1",
       "date": "2016-06-05 12:32:32",
@@ -9,6 +10,7 @@
       "body": "hello world..."
     },
     {
+      "id": 2,
       "author": "artisan",
       "title": "post 2",
       "date": "2016-06-05 12:32:32",
@@ -16,6 +18,7 @@
       "body": "post 2 body."
     },
     {
+      "id": 3,
       "author": "artisan",
       "title": "post 3",
       "date": "2016-06-05 12:32:32",
@@ -23,6 +26,7 @@
       "body": "post 3 body."
     },
     {
+      "id": 4,
       "author": "artisan",
       "title": "post 4",
       "date": "2016-06-05 12:32:32",
