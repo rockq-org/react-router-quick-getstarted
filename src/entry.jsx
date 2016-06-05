@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import Routers from './routers.jsx';
 import configureStore from './store/index.es6';
 import { Provider } from 'react-redux';
-import { DevTools } from 'redux-devtools';
 
 let store = configureStore();
 
