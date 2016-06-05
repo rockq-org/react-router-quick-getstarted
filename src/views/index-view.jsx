@@ -17,7 +17,6 @@ class IndexView extends React.Component {
   render() {
     return (
       <div className="container">
-        index view.
         <div className="media-list">
           {
             this.props.posts.posts.map((post, index) => {
