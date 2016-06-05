@@ -3,7 +3,8 @@ import request from 'superagent';
 import * as actions from '../actions/index.es6';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { requestPosts } from '../actions/index.es6';
+import { requestPosts, pagination } from '../actions/index.es6';
+import ReactPagers from 'react-pagers';
 
 class IndexView extends React.Component {
   constructor(props) {
@@ -12,14 +13,23 @@ class IndexView extends React.Component {
 
   componentDidMount() {
     this.props.dispatch(requestPosts());
-    // this.props.actions.requestPosts();
   }
+
+  handlePageChange(active) {
+    this.props.dispatch(pagination(active));
+  }
+
   render() {
+    let totalPage = Math.ceil(this.props.posts.posts.length / 2);
+    let posts = this.props.posts.posts.slice((this.props.posts.active - 1) * 2,
+                  this.props.posts.active * 2
+                );
+// console.log((this.props.posts.active - 1) * 2, this.props.posts.active * 2, posts, '===');
     return (
       <div className="container">
         <div className="media-list">
           {
-            this.props.posts.posts.map((post, index) => {
+            posts.map((post, index) => {
               return (
                 <div className="media" key={ index }>
                   <h4 className="media-header">{ post.title }</h4>
@@ -28,6 +38,9 @@ class IndexView extends React.Component {
               )
             })
           }
+          <ReactPagers active={ this.props.posts.active } total={ totalPage }
+            useHash={ false }
+            onChange={ this.handlePageChange.bind(this) } />
         </div>
       </div>
     );

@@ -22,6 +22,13 @@ export function requestPosts() {
   }
 }
 
+export function pagination(active) {
+  return {
+    type: 'PAGINATION',
+    active
+  }
+}
+
 function receivePosts(posts) {
   return {
     type: 'RECEIVE_POSTS',
