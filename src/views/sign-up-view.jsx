@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import request from 'superagent';
 
 class SignUpView extends React.Component {
@@ -7,11 +8,7 @@ class SignUpView extends React.Component {
 
     console.log('registry...');
 
-    // request.post({
-    //   // ...
-    // });
-
-    this.props.context.router.push({
+    this.context.router.push({
       pathname: 'login'
     });
   }
@@ -35,6 +32,8 @@ class SignUpView extends React.Component {
   }
 }
 
-console.dir(SignUpView);
+SignUpView.contextTypes = {
+  router: React.PropTypes.object
+};
 
-export default SignUpView;
+export default withRouter(SignUpView);
